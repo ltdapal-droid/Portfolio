@@ -1,13 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1></h1>
+    <section id="main">
+
+        <div class="main-block">
+            <img src="images/maskot.png" alt="" width="200">
+            <div class="main-content">
+                <img src="images/close_btn.jpg">
+                <h1 class="main-title">Хакер Дастан</h1>
+                <p class="main-subtitle">Личная страница разработчика</p>
+            </div>
+            <div class="">
+                <button>Подробнее</button>
+            </div>
+        </div>
+        <div class="mouving-bag"></div>
+    </section>
+    <section id="about">
+        <img src="images/cloud.png" class="cloud">
+        <h1 class="title">ОБО МНЕ</h1>
+        <div class="about-block">
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-title">Меня зовут Дастан.Я занимаюсь разработкой современных сайтов и приложений. <br> <br>
+                    Мне нравится создавать интересные и современные проекты</p>
+                    <br>
+                    <br>
+                    <div class="button">
+                        <a href="">Мои навыки</a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card"><img src="images/photo.png" alt="" width="300"></div>
+        </div>
+    </section>
+    <section id="skills">
+        <img src="images/moving-balloon.png" alt="" class="cloud">
+        <h1 class="title">НАВЫКИ</h1>
+        <div class="skills-block">
+            <div class="skills-card">
+                <img src="images/close_btn.jpg" alt="" class="skills-clous">
+                <p>Этот сайт я сделал в рамках обучения школы IT online school</p>
+                <div class="languages">
+                    <img src="images/html.png" alt="">
+                    <img src="images/css.png" alt="">
+                    <img src="images/js.png" alt="">
+                </div>
+                <div class="button">
+                    <a href="">Смотреть работы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="works">
+        <h1 class="raboty">Мои работы</h1>
+        <div class="works-block">
+            <div class="works-images">
+                <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <h1 class="title">Контакты</h1>
+        <div class="contacts-block">
+            <form action="" class="contacts-form">
+                <img src="images/close_btn.jpg" alt="" width="100" class="skills-clous">
+                <p>ПОЖАЛУЙСТА, ОСТАВЬТЕ СВОИ КОНТАКТНЫЕ ДАННЫЕ ЧТОБЫ Я МОГ, С ВАМИ СВЯЗАТЬСЯ</p>
+                <input type="text" placeholder="Ваше имя...">
+                <input type="text" placeholder="Ваш email...">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-info">
+            <p>Дастан</p>
+            <p>Личный сайт вед разработчика</p>
+        </div>
+        <div class="footer-year">
+            <p>2026</p>
+        </div>
+        <div class="footer-links">
+            <a href="">
+                <img src="images/facebook.svg" alt="">
+            </a>
+            <a href="">
+                <img src="images/instagram.svg" alt="">
+            </a>
+            <a href="">
+                <img src="images/telegram.svg" alt="">
+            </a>
+            <a href="">
+                <img src="images/discord.svg" alt="">
+            </a>
+        </div>
+    </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 </body>
 </html>
