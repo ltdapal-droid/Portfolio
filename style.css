@@ -22,6 +22,9 @@ section{
 }
 #works{
     background-image: url(images/bgWORKS.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #contacts{
     background-image: url(images/bgCONTACTS.png);
@@ -195,7 +198,7 @@ button:hover{
     right: 0;
 }
 .works-images{
-    margin-bottom: 80px;
+    width: 60%;
 }
 .raboty{
     text-align: center;
@@ -320,3 +323,37 @@ footer{
         height: 100%;
         object-fit: cover;
       }
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.fixed-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    height: 100px;    
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 150px;
+}
+.nav-link{
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #3674b5;
+    background-color: white;
+    text-decoration: none;
+    color: #3674b5;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: 600;
+}
