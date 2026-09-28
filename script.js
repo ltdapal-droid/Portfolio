@@ -15,13 +15,13 @@ window.onscroll=function() {
     if (window.scrollY>=h*4) {
         classlink='.contacts-link'
     }
-    else if(window.scrolly >= h*3) {
+    else if(window.scrollY >= h*3) {
         classlink = '.works-link'
     }
-    else if(window.scrolly >= h*2) {
+    else if(window.scrollY >= h*2) {
         classlink = '.skills-link' 
     }
-    else if(window.scrolly >= h){
+    else if(window.scrollY >= h){
         classlink = '.about-link'
     }
     else{
