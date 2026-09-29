@@ -229,6 +229,17 @@ button:hover{
     box-shadow: 2px 5px black;
     position: relative;
 }
+.mobile-button{
+display: none;
+padding-top: 10px;
+width: 40px;
+position: absolute;
+right: 20px;
+}
+.hide{
+display: none;
+}
+
 .contacts-form p{
     color: black;
     font-size: 16px;
@@ -402,15 +413,19 @@ padding: 0;
 order: -1;
 background-size: contain;
 padding-top: 20px;
-width: 75%;
-margin-bottom: 20px;
+width: 45%;
+border-radius: 20px 20px 0 0;
 }
 .about-card img{
 width: 100%;
+border-radius: 20px;
 }
 .about-content{
 width: 75%;
-height: 250px;
+height: 200px;
+border-radius: 20px;
+text-align: center;
+padding: 40px;
 }
 .about-title{
 font-size: 18px;
@@ -418,6 +433,7 @@ font-size: 18px;
 .skills-card{
 margin-top: 50px;
 padding-left: 10px;
+height: 400px;
 }
 .skills-card p{
 font-size: 18px;
@@ -427,10 +443,8 @@ margin-bottom: 20px;
 .skills-section{
 min-height: 60vh;
 }
-
-.skills-card .button{
-position: absolute;
-bottom: 150px;
+.cloud, .mouving-bag{
+    display: none;
 }
 .works-block{
 flex-direction: column;
@@ -449,5 +463,36 @@ align-items: center;
 }
 .footer-info{
 text-align: center;
+}
+.hide{
+    display: none;
+}
+.mobile-button{
+display: block;
+}
+.mobile-menu{
+position: absolute;
+top: 0;
+z-index: 10;
+width: 100%;
+background-color: #0090FF;
+min-height: 100vh;
+}
+.mobile-nav{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.mobile-nav-links .nav-link{
+margin-bottom: 30px;
+width: 210px;
+height: 50px;
+}
+.mobile-krestik{
+    margin-top: 35px;
+    position: absolute;
+    right: 18px;
 }
 }

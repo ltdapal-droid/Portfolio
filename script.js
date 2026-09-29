@@ -6,6 +6,10 @@ menu.addEventListener('click', function(event) {
     if (click.classList.contains('nav-link')) {
         click.classList.add('active')
         activebtn.classList.remove('active')
+        let mobile = document.querySelector(' .mobile-menu') ;
+    if (!mobile.classList.contains ('hide') ) {
+    mobile.classList.add('hide');
+    }
     }
 })
 
@@ -35,3 +39,13 @@ if (!newactivebtn.classList.contains('.active')) {
     newactivebtn.classList.add('active')
     activebtn.classList.remove('active')
 }}
+
+document.querySelector(".mobile-button") .addEventListener("click",function () {
+    document.querySelector(".mobile-menu").classList.remove("hide")
+    document.querySelector(".mobile-button").classList.add("hide")
+});
+document.querySelector(".mobile-menu img")
+.addEventListener("click", function () {
+    document.querySelector(".mobile-menu").classList.add("hide")
+    document.querySelector(".mobile-button").classList.remove("hide")
+})
